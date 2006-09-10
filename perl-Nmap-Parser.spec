@@ -14,12 +14,12 @@ License:	GPL v2+
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	5d5f113a9d166b07e041a5dc52f9c3ee
+URL:		http://search.cpan.org/dist/Nmap-Parser/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
-BuildRequires:	perl(XML::Twig) >= 3.16
+BuildRequires:	perl-XML-Twig >= 3.16
 %endif
-URL:		http://search.cpan.org/dist/Nmap-Parser/
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -31,8 +31,8 @@ quickly create fast and robust security scripts that utilize the
 powerful port scanning abilities of nmap.
 
 %description -l pl
-Modu³ ten to implementacja intefejsu do informacji zebranych podczas
-skanowania nmapem. Dzia³a na zasadzie przetwarzania danych xml
+Modu³ ten to implementacja interfejsu do informacji zebranych podczas
+skanowania nmapem. Dzia³a na zasadzie przetwarzania danych XML
 wygenerowanych przez program nmap. Pozwala to na generowanie szybkich
 i z³o¿onych skryptów korzystaj±cych z potê¿nych mo¿liwo¶ci, jakie daje
 program nmap.
@@ -59,5 +59,6 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Changes README
+%dir %{perl_vendorlib}/Nmap
 %{perl_vendorlib}/Nmap/*.pm
 %{_mandir}/man3/*
