@@ -6,7 +6,7 @@
 %define	pdir	Nmap
 %define	pnam	Parser
 Summary:	Nmap::Parser - parse nmap scan data with perl
-Summary(pl.UTF-8):   Nmap::Parser - parsowanie danych ze skanowania nmapem
+Summary(pl.UTF-8):	Nmap::Parser - parsowanie danych ze skanowania nmapem
 Name:		perl-Nmap-Parser
 Version:	1.05
 Release:	1
