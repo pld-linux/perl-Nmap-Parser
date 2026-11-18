@@ -7,12 +7,12 @@
 Summary:	Nmap::Parser - parse nmap scan data with perl
 Summary(pl.UTF-8):	Nmap::Parser - parsowanie danych ze skanowania nmapem
 Name:		perl-Nmap-Parser
-Version:	1.21
-Release:	2
-License:	GPL v2+
+Version:	1.37
+Release:	1
+License:	MIT
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	3733b9d5f76fb34c49edad21eb282bbc
+Source0:	https://www.cpan.org/authors/id/A/AP/APERSAUD/%{pdir}-%{pnam}-%{version}.tar.gz
+# Source0-md5:	672fd56de67f994af68f75d477ece41a
 URL:		http://search.cpan.org/dist/Nmap-Parser/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
@@ -57,7 +57,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc Changes README
+%doc Changes.md README.md
 %dir %{perl_vendorlib}/Nmap
 %{perl_vendorlib}/Nmap/*.pm
 %{_mandir}/man3/*
